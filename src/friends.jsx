@@ -43,7 +43,7 @@ const PagesTab = () => {
         <span className="flex items-center">
           <FaShop className="text-2xl text-gray-500 mr-2 size-10"/>
           <p className="text-lg text-gray-500">Shop</p>
-        </span>
+        </span>das
       </div>
 
     )
