@@ -8,6 +8,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material';
 
 
+
 const CustomTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} arrow />
   ))({
@@ -34,23 +35,38 @@ const CustomTooltip = styled(({ className, ...props }) => (
 
 const Sidebar = () => {
   return (
-    <div className="bg-gray-900 fixed top-0 left-0 w-[8rem] h-screen flex-col m-0 flex shadow-lg text-white items-center pt-5 font-sans"> 
+    <>
+    <div className="flex z-10 h-screen">
+    <div className="bg-gray-1000 w-[6rem] h-screen flex-col m-0 flex shadow-lg text-white items-center pt-5 font-sans"> 
+    <p className='text-xl text-gray-500 font-bold'>Discord</p>
     <CustomTooltip title="Direct Messages" arrow placement="right">
-      <img src={userPfp} alt="" className='rounded-[10rem] h-[5rem] w-[5rem] 
+      <img src={userPfp} alt="" className='rounded-[10rem] h-[4rem] w-[4rem] 
       relative mt-2 mb-2 mx-auto shadow-lg hover:rounded-2xl transition-all ease-in-out duration-200 cursor-pointer'/>
     </CustomTooltip>
     <hr className="my-4 border-t-2 h-1 rounded border-gray-600 w-16" />
     <CustomTooltip title="Sopa Epik Posa" arrow placement="right">
-      <img src={dcGroup} alt="" className='rounded-[10rem] h-[5rem] w-[5rem] 
+      <img src={dcGroup} alt="" className='rounded-[10rem] h-[4rem] w-[4rem] 
       relative mt-2 mb-2 mx-auto shadow-lg hover:rounded-2xl transition-all ease-in-out duration-200 cursor-pointer'/>
     </CustomTooltip>
     <CustomTooltip title="Sopa Epik Keni" arrow placement="right">
-      <img src={kennyGroup} alt="" className='rounded-[10rem] h-[5rem] w-[5rem] 
+      <img src={kennyGroup} alt="" className='rounded-[10rem] h-[4rem] w-[4rem] 
       relative mt-2 mb-2 mx-auto shadow-lg hover:rounded-2xl transition-all ease-in-out duration-200 cursor-pointer'/>
     </CustomTooltip>
-    <SideBarIcon icon={<FaPlus size='50' />} title="Add a Server" />
-    <SideBarIcon icon={<IoNavigateCircle size='50' />} title="Explore Discoverable Servers" />
+    <SideBarIcon icon={<FaPlus size='40' />} title="Add a Server" />
+    <SideBarIcon icon={<IoNavigateCircle size='40' />} title="Explore Discoverable Servers" />
     </div>
+   
+    </div>   
+    
+    
+     </>
+
+
+
+
+ 
+
+
   )
 }
 
