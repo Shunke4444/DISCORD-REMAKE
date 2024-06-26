@@ -37,7 +37,7 @@ const Sidebar = () => {
   return (
     <>
     <div className="flex z-10 h-screen">
-    <div className="bg-gray-1000 w-[6rem] h-screen flex-col m-0 flex shadow-lg text-white items-center pt-5 font-sans"> 
+    <div className="bg-gray-900  w-[6rem] h-screen flex-col m-0 flex shadow-lg text-white items-center pt-5 font-sans"> 
     <p className='text-xl text-gray-500 font-bold'>Discord</p>
     <CustomTooltip title="Direct Messages" arrow placement="right">
       <img src={userPfp} alt="" className='rounded-[10rem] h-[4rem] w-[4rem] 
