@@ -8,3 +8,17 @@
                 rounded-[6rem] hover:rounded-2xl transition-all ease-in-out duration-300 cursor-pointer size-10;
     }
 };
+
+@layer components{
+    .friendstatus-test {
+        @apply text-gray-200 font-medium hover:bg-gray-600 px-2 py-1 rounded-md cursor-pointer transition-all;
+    }
+}
+
+
+
+@layer components {
+    .friendStatusIcons{
+        @apply text-gray-500 hover:cursor-pointer;
+    }
+}

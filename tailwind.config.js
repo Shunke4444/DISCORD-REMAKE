@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+import { green } from '@mui/material/colors';
+
 export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}", 
@@ -24,6 +26,7 @@ export default {
           500: '#a7aaad',
           400: '#7e7f86',
         },
+        'discordGreen': '#268148',
         'discordBlue' : '	#7289da',
       },
 

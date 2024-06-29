@@ -8,7 +8,7 @@ const MiniNavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
   return (
     <div className="flex flex-col top-0 z-1 absolute">
-      <div className='w-screen h-6 bg-gray-10 00 flex items-center justify-end top-0 pr-3 space-x-2'>
+      <div className='w-screen h-6 bg-gray-900 flex items-center justify-end top-0 pr-3 space-x-2'>
       <VscChromeMinimize className='h-20 text-white hover:cursor-pointer'/>
 
       <div onClick={() => setIsOpen(prev => !prev)}>

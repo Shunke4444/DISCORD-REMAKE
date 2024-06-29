@@ -55,19 +55,11 @@ const Sidebar = () => {
     <SideBarIcon icon={<FaPlus size='40' />} title="Add a Server" />
     <SideBarIcon icon={<IoNavigateCircle size='40' />} title="Explore Discoverable Servers" />
     </div>
-   
     </div>   
-    
-    
      </>
-
-
-
-
- 
-
-
   )
 }
+
+
 
 export default Sidebar
