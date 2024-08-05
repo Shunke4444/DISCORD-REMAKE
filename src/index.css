@@ -3,22 +3,27 @@
 @tailwind utilities;
 
 @layer components {
-    .sidebar-icon{
+    .sidebar-icon {
         @apply relative flex items-center justify-center h-[4rem] w-[4rem] mt-2 mb-2 mx-auto shadow-lg bg-gray-700 text-green-500 hover:bg-green-600 
                 rounded-[6rem] hover:rounded-2xl transition-all ease-in-out duration-300 cursor-pointer size-10;
     }
-};
+}
 
-@layer components{
+@layer components {
     .friendstatus-test {
         @apply text-gray-200 font-medium hover:bg-gray-600 px-2 py-1 rounded-md cursor-pointer transition-all;
     }
 }
 
-
-
 @layer components {
-    .friendStatusIcons{
+    .friendStatusIcons {
         @apply text-gray-500 hover:cursor-pointer;
     }
 }
+
+@layer components {
+    .loginBg {
+        background-image: url('./assets/DiscordBG.png');
+        @apply bg-cover bg-center h-screen w-screen;
+    }
+} 

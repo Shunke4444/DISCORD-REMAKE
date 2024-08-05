@@ -6,7 +6,7 @@ import dcGroup from './assets/Smiling-Cat.jpg'
 import kennyGroup from './assets/KENNYY.webp'
 import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material';
-
+import { Link } from 'react-router-dom';
 
 
 const CustomTooltip = styled(({ className, ...props }) => (
@@ -44,13 +44,20 @@ const Sidebar = () => {
       relative mt-2 mb-2 mx-auto shadow-lg hover:rounded-2xl transition-all ease-in-out duration-200 cursor-pointer'/>
     </CustomTooltip>
     <hr className="my-4 border-t-2 h-1 rounded border-gray-600 w-16" />
+    <Link to='/server1'>
     <CustomTooltip title="Sopa Epik Posa" arrow placement="right">
       <img src={dcGroup} alt="" className='rounded-[10rem] h-[4rem] w-[4rem] 
       relative mt-2 mb-2 mx-auto shadow-lg hover:rounded-2xl transition-all ease-in-out duration-200 cursor-pointer'/>
     </CustomTooltip>
+    </Link>
+   
     <CustomTooltip title="Sopa Epik Keni" arrow placement="right">
+      <Link to='/server2'>
       <img src={kennyGroup} alt="" className='rounded-[10rem] h-[4rem] w-[4rem] 
       relative mt-2 mb-2 mx-auto shadow-lg hover:rounded-2xl transition-all ease-in-out duration-200 cursor-pointer'/>
+      </Link>
+  
+
     </CustomTooltip>
     <SideBarIcon icon={<FaPlus size='40' />} title="Add a Server" />
     <SideBarIcon icon={<IoNavigateCircle size='40' />} title="Explore Discoverable Servers" />

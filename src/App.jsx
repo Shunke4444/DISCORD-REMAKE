@@ -1,15 +1,37 @@
 import React from 'react';
-import Sidebar from './sidebar';
-import FriendsTab from './friends';
-import FriendStatus from './friendsStatus';
+import MainPage from './pages/MainPage';
+import { 
+Route,
+createBrowserRouter, 
+createRoutesFromElements, 
+RouterProvider
+ } from 'react-router-dom';
+import EpikPosaDiscordPage from './pages/EpikPosaDiscordPage';
+import KennyPage from './pages/KennyPage';
+import Auth from './components/Auth';
+
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route index element = {<Auth/>}/>
+      <Route path='/main' element={<MainPage/>}/>
+      <Route path='/server1' element={<EpikPosaDiscordPage/>}/>
+      <Route path='/server2' element={<KennyPage/>}/>
+    </Route>
+)
+);
+
+
 
 const App = () => {
   return (
-    <section className='bg-gray-1000 w-screen h-screen font-sans flex overflow-hidden'>
-      <Sidebar></Sidebar>   
-      <FriendsTab></FriendsTab>
-      <FriendStatus/>
-    </section>
+    <>
+     <RouterProvider router={router}>
+     </RouterProvider>  
+    </>
+     
   );
 };
 

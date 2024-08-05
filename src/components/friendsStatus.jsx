@@ -5,7 +5,6 @@ import { SiRobloxstudio } from "react-icons/si";
 import { IoChatbubbles } from "react-icons/io5";
 import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material';
-import userPfp from './assets/userpfp.jpg'
 
 const CustomTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} arrow />

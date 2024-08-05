@@ -28,6 +28,12 @@ export default {
         },
         'discordGreen': '#268148',
         'discordBlue' : '	#7289da',
+
+        'purple': {
+          1000: '#4d59d6',
+          900: '#5865f2',
+
+        },
       },
 
 
